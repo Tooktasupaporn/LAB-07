@@ -10,16 +10,16 @@
 :--------- | ----------- | -------- 
 xxx	|ใช้ได้	|ไม่มีตัวอักษรที่ละเมิดกฎการตั้งชื่อ
 null	|ใช้ไม่ได้	|เป็นคำสงวนในภาษา C#
-_value	| ได้ |	
+_value	| ใช้ได้ |	ไม่มีตัวอักษรที่ละเมิดกฎการตั้งชื่อ 
 First-name | ใช่ไม่ได้| มีเครื่องหมายทางคณิตศาสตร์อยู่ในชื่อ			
-Hello!	| |	
-w*h 	| |			
-time	| |			
-do	| |			
-Do	| |			
-21November	| |			
-ladkrabang	| |			
-Student ID	| |			
+Hello!	| ใช้ไม่ได้||มีตัวอักษร !ที่ละเมิดกฎการตั้งชื่อ 	
+w*h 	| ใช้ไม่ได้|ตัวอักษร *ที่ละเมิดกฎการตั้งชื่อ			
+time	|ใช้ได้ |ไม่มีตัวอักษรที่ละเมิดกฎการตั้งชื่อ 			
+do	| ใช้ไม่ได้| เป็นคำสงวนในภาษา C#			
+Do	|ใช้ได้ |ไม่มีตัวอักษรที่ละเมิดกฎการตั้งชื่อ 			
+21November	| ใช้ได้|ไม่มีตัวอักษรที่ละเมิดกฎการตั้งชื่อ 			
+ladkrabang	|ใช้ได้ |ไม่มีตัวอักษรที่ละเมิดกฎการตั้งชื่อ 			
+Student ID	|ใช้ไม่ได้ |ในการตั้งชื่อไม่สามารถเว้นวรรคได้			
 
 ##2). ชนิดข้อมูลภายในภาษา C# 
   2.1).	Property ของชนิดข้อมูล
@@ -113,11 +113,49 @@ namespace RandomNumber
 
 1. สร้างตัวแปร Random โดยการมีสุ่มเลข 1 หลัก (0 – 9 )
 
-1. สร้างตัวแปรชนิด integer สำหรับรับค่าจากผู้ใช้
+```
+Random random = new Random();
+int randomNumber = random.Next(0, 9);
+Console.WriteLine(randomNumber);
+Console.ReadKey();
+```
 
-1. สร้างตัวแปร boolean โดยเก็บค่าที่ได้จากการเปรียบเทียบตัวเลขในข้อ 1 และ 2
 
-1. ให้พิมพ์ค่าตัวแปร boolean ในข้อ 3 ออกทางหน้าจอ
+2. สร้างตัวแปรชนิด integer สำหรับรับค่าจากผู้ใช้
+
+```
+int Number;
+onsole.Write("Number : ");
+Number = int.Parse(Console.ReadLine());
+Console.Write("Thank You");
+Console.ReadKey();
+```
+
+3. สร้างตัวแปร boolean โดยเก็บค่าที่ได้จากการเปรียบเทียบตัวเลขในข้อ 1 และ 2
+
+```
+bool a = randomNumber > Number;
+Console.WriteLine("{0}", a);
+Console.ReadKey();
+
+```
+
+4. ให้พิมพ์ค่าตัวแปร boolean ในข้อ 3 ออกทางหน้าจอ
+```
+Random random = new Random();
+int randomNumber = random.Next(0, 9);
+Console.WriteLine(randomNumber);
+Console.ReadKey();
+
+int Number;
+Console.Write("Number : ");
+Number = int.Parse(Console.ReadLine()); 
+Console.ReadKey();
+
+bool a = randomNumber > Number;
+Console.WriteLine("{0}", a);
+Console.ReadKey();
+```
 
 
 ##การเขียนโปรแกรมด้วยตัวดำเนินการทางตรรกะ
