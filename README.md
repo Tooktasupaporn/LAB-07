@@ -13,7 +13,7 @@ null	|ใช้ไม่ได้	|เป็นคำสงวนในภาษ
 _value	| ใช้ได้ |	ไม่มีตัวอักษรที่ละเมิดกฎการตั้งชื่อ 
 First-name | ใช่ไม่ได้| มีเครื่องหมายทางคณิตศาสตร์อยู่ในชื่อ			
 Hello!	| ใช้ไม่ได้||มีตัวอักษร !ที่ละเมิดกฎการตั้งชื่อ 	
-w*h 	| ใช้ไม่ได้|ตัวอักษร *ที่ละเมิดกฎการตั้งชื่อ			
+w*h 	| ใช้ไม่ได้|มีตัวอักษร *ที่ละเมิดกฎการตั้งชื่อ			
 time	|ใช้ได้ |ไม่มีตัวอักษรที่ละเมิดกฎการตั้งชื่อ 			
 do	| ใช้ไม่ได้| เป็นคำสงวนในภาษา C#			
 Do	|ใช้ได้ |ไม่มีตัวอักษรที่ละเมิดกฎการตั้งชื่อ 			
@@ -248,6 +248,104 @@ namespace thruthTable
 5. NOR
 6. Exclusive OR
 ```
+```
+using System;
+namespace RandomNumber
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+          
+            bool A, B, Y;
+            Console.WriteLine("      Y = A AND B");
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("   A      B\t|  Y");
+            Console.WriteLine("-----------------------");
+            A = false; B = false; Y = A & B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = false; B = true; Y = A & B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = true; B = false; Y = A & B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = true; B = true; Y = A & B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            Console.WriteLine("-----------------------");
+
+            Console.WriteLine("      Y = A OR B");
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("   A      B\t|  Y");
+            Console.WriteLine("-----------------------");
+            A = false; B = false; Y = A | B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = false; B = true; Y = A | B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = true; B = false; Y = A | B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = true; B = true; Y = A | B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            Console.WriteLine("-----------------------");
+
+            Console.WriteLine("      Y = NOT A");
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("   A    |  Y");
+            Console.WriteLine("-----------------------");
+            A = false; Y = !A;
+            Console.WriteLine(" {0}\t| {1}", A, Y);
+            A = true; Y = !A;
+            Console.WriteLine(" {0}\t| {1}", A, Y);
+            Console.WriteLine("-----------------------");
+
+            Console.WriteLine("      Y = A NAND B");
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("   A      B\t|  Y");
+            Console.WriteLine("-----------------------");
+            A = false; B = false; Y = !(A & B);
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = false; B = true; Y = !(A & B);
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = true; B = false; Y = !(A & B);
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = true; B = true; Y = !(A & B);
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            Console.WriteLine("-----------------------");
+
+            Console.WriteLine("      Y = A NOR B");
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("   A      B\t|  Y");
+            Console.WriteLine("-----------------------");
+            A = false; B = false; Y = !(A | B);
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = false; B = true; Y = !(A | B);
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = true; B = false; Y = !(A | B);
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = true; B = true; Y = !(A | B);
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            Console.WriteLine("-----------------------");
+
+
+            Console.WriteLine("      Y = A XOR B");
+            Console.WriteLine("-----------------------");
+            Console.WriteLine("   A      B\t|  Y");
+            Console.WriteLine("-----------------------");
+            A = false; B = false; Y = A ^ B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = false; B = true; Y = A ^ B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = true; B = false; Y = A ^ B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            A = true; B = true; Y = A ^ B;
+            Console.WriteLine(" {0}\t{1}\t| {2}", A, B, Y);
+            Console.WriteLine("-----------------------");
+        }
+    }
+}
+
+
+```
+![]()
+
 
 
 
