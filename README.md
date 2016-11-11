@@ -57,6 +57,66 @@ Maximum Value :2147483647
 คำสั่งสำหรับการทดลอง
 ให้นักศึกษา เขียนโปรแกรมคล้ายกับตัวอย่างที่ 1 โดยมีชนิดข้อมูลเป็น byte, char, bool, sbyte, short, ushort, uint, float, double, decimal, long และ ulong
 
+--byte
+using System;
+namespace variableProperties
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Data type : byte");
+            Console.WriteLine("Size :" + sizeof(byte));
+            Console.WriteLine("Minimum Value :" + byte.MinValue);
+            Console.WriteLine("Maximum Value :" + byte.MaxValue);
+            Console.WriteLine("---------------------------------");
+            Console.WriteLine("");
+        }
+    }
+}
+
+--char
+using System;
+namespace variableProperties
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Data type : char");
+            Console.WriteLine("Size :" + sizeof(char));
+            Console.WriteLine("Minimum Value :" + (int)char.MinValue);
+            Console.WriteLine("Maximum Value :" + (int)char.MaxValue);
+            Console.WriteLine("---------------------------------");
+            Console.WriteLine("");
+        }
+    }
+}
+
+--bool
+using System;
+namespace variableProperties
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            bool a = 4 > 5;
+            Console.WriteLine("Data type : bool");
+            Console.WriteLine("4 > 5 then True/False");
+            Console.WriteLine("{0}", a);
+            bool b = 10 < 20;
+            Console.WriteLine("10 < 20 then True/False");
+            Console.WriteLine("{0}", b);
+            Console.WriteLine("---------------------------------");
+            Console.WriteLine("");
+        }
+    }
+}
+
+ --sbyte
+ 
+
 **หมายเหตุ**
  
 ชนิดข้อมูล ```bool``` เก็บข้อมูลได้เฉพาะ ```true``` และ ```false``` ไม่ต้องหา ```MinValue``` และ ```MaxValue```
@@ -378,15 +438,115 @@ public class intergerTest
 ให้เขียนโปรแกรมเพื่อหาผลลัพธ์ของสมการต่อไปนี้
 ```
 1.	a+b
+```
+using System;
+public class intergerTest
+{
+    static void Main(string[] args)
+    {
+        double a = 10, b = 20, x = 5, y = 2, ans;
+
+        ans = a + b;
+        Console.WriteLine("With a = 10, b = 20, x = 5, y = 2");
+        Console.WriteLine("");
+        Console.WriteLine("1. a + b");
+        Console.WriteLine("   {1} + {2} = {0} ", ans, a, b);
+        Console.WriteLine("");
+    }
+}
+
+```
+
 2.	x-b
+``` 
+using System;
+public class intergerTest
+{
+    static void Main(string[] args)
+    {
+        double a = 10, b = 20, x = 5, y = 2, ans;
+
+        ans = a - b;
+        Console.WriteLine("With a = 10, b = 20, x = 5, y = 2");
+        Console.WriteLine("");
+        Console.WriteLine("1. a - b");
+        Console.WriteLine("   {1} - {2} = {0} ", ans, a, b);
+        Console.WriteLine("");
+    }
+}
+```
 3.	x*b
+```
+using System;
+public class intergerTest
+{
+    static void Main(string[] args)
+    {
+        double a = 10, b = 20, x = 5, y = 2, ans;
+
+        ans = x * b;
+        Console.WriteLine("With a = 10, b = 20, x = 5, y = 2");
+        Console.WriteLine("");
+        Console.WriteLine("1. x * b");
+        Console.WriteLine("   {1} * {2} = {0} ", ans, x, b);
+        Console.WriteLine("");
+    }
+}
+```
+
 4.	y/a
+```
+using System;
+public class intergerTest
+{
+    static void Main(string[] args)
+    {
+        double a = 10, b = 20, x = 5, y = 2, ans;
+
+        ans = y / a;
+        Console.WriteLine("With a = 10, b = 20, x = 5, y = 2");
+        Console.WriteLine("");
+        Console.WriteLine("1. y / a");
+        Console.WriteLine("   {1} / {2} = {0} ", ans, y, a);
+        Console.WriteLine("");
+    }
+}
+```
 5.	b%y
+```
+using System;
+public class intergerTest
+{
+    static void Main(string[] args)
+    {
+        double a = 10, b = 20, x = 5, y = 2, ans;
+
+        ans = b % y;
+        Console.WriteLine("With a = 10, b = 20, x = 5, y = 2");
+        Console.WriteLine("");
+        Console.WriteLine("1. b % y");
+        Console.WriteLine("   {1} % {2} = {0} ", ans, b, y);
+        Console.WriteLine("");
+    }
+}
+```
 6.	y+10%x
+```
+
+
+```
 7.	a/3*5
+```
+```
 8.	9/2*a
+```
+```
 9.	y%8
+```
+```
 10.	100*x+y%2-a
+```
+```
 ```
 ##2.2.3. ชนิดข้อมูลเลขทศนิยม (Floating Point and Decimal Types)
 ตัวเลขจำนวนทศนิยม มักจะใช้ในการคำนวณทางวิทยาศาสตร์ เนื่องจากค่าในวิทยาศาสตร์ต้องการความละเอียดสูง หรือมีค่าสูงมากกว่าที่เลขจำนวนเต็มจะเก็บได้
