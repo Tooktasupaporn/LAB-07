@@ -74,6 +74,7 @@ namespace variableProperties
         }
     }
 }
+![](https://github.com/Tooktasupaporn/LAB-07/blob/master/lab7%20byte.PNG?raw=true)
 
 --char
 using System;
@@ -92,6 +93,7 @@ namespace variableProperties
         }
     }
 }
+1[](https://github.com/Tooktasupaporn/LAB-07/blob/master/lab7%20char.PNG?raw=true)
 
 --bool
 using System;
@@ -113,7 +115,7 @@ namespace variableProperties
         }
     }
 }
-
+![](https://github.com/Tooktasupaporn/LAB-07/blob/master/lab7%20bool.PNG?raw=true)
  --sbyte
  ```
  using System;
@@ -137,6 +139,7 @@ namespace Lab7
     }
 }
  ```
+ ![](https://github.com/Tooktasupaporn/LAB-07/blob/master/lab7%20sbyt.PNG?raw=true)
  --short
  ```
  using System;
@@ -161,6 +164,7 @@ namespace Lab7
     }
 }
  ```
+ ![](https://github.com/Tooktasupaporn/LAB-07/blob/master/lab7%20short.PNG?raw=true)
  --ushort
  ```
  using System;
@@ -184,6 +188,7 @@ namespace Lab7
     }
 }
  ```
+ ![](https://github.com/Tooktasupaporn/LAB-07/blob/master/lab7%20ushort.PNG?raw=true)
  --uint
  ```
  using System;
@@ -207,6 +212,7 @@ namespace Lab7
     }
 }
  ```
+ ![](https://github.com/Tooktasupaporn/LAB-07/blob/master/lab7%20uint.PNG?raw=true)
  --float
  ```
  using System;
@@ -231,6 +237,7 @@ namespace Lab7
     }
 }
  ```
+ ![](https://github.com/Tooktasupaporn/LAB-07/blob/master/lab7%20float.PNG?raw=true)
  --double
  ```
  using System;
@@ -255,6 +262,7 @@ namespace Lab7
     }
 }
  ```
+ ![](https://github.com/Tooktasupaporn/LAB-07/blob/master/lab7%20double.PNG?raw=true)
  --decimal
  ```
  using System;
@@ -280,6 +288,7 @@ namespace Lab7
     }
 }
  ```
+ ![](https://github.com/Tooktasupaporn/LAB-07/blob/master/decimal.PNG?raw=true)
  --long
  ```
  using System;
@@ -306,6 +315,7 @@ namespace Lab7
     }
 }
  ```
+ ![](https://github.com/Tooktasupaporn/LAB-07/blob/master/long.PNG?raw=true)
  --ulong
  ```
  using System;
@@ -331,6 +341,7 @@ namespace Lab7
     }
 }
  ```
+ ![](https://github.com/Tooktasupaporn/LAB-07/blob/master/ulong.PNG?raw=true)
  
  
  
@@ -434,7 +445,7 @@ bool a = randomNumber > Number;
 Console.WriteLine("{0}", a);
 Console.ReadKey();
 ```
-
+![](https://github.com/Tooktasupaporn/LAB-07/blob/master/random.PNG?raw=true)
 
 ##การเขียนโปรแกรมด้วยตัวดำเนินการทางตรรกะ
 
@@ -474,6 +485,7 @@ A | Y
 Logical AND |	&
 Logical XOR |	^
 Logical OR |	\|
+
 
 ตัวอย่างภาษา C# ต่อไปนี้เป็นการพิมพ์ตารางความจริงออกทางหน้าจอ
 ```csharp
@@ -622,7 +634,8 @@ namespace RandomNumber
 
 
 ```
-![]()
+![](https://github.com/Tooktasupaporn/LAB-07/blob/master/lab7%20and%20or%20nor%20anand.PNG?raw=true)
+
 
 
 
@@ -671,8 +684,9 @@ public class intergerTest
         Console.WriteLine("   {1} + {2} = {0} ", ans, a, b);
         Console.WriteLine("");
     }
-```}
-
+    }
+```
+![](https://github.com/Tooktasupaporn/LAB-07/blob/master/lab7%20a+b.PNG?raw=true)
 
 2.	x-b
 ``` 
@@ -692,6 +706,7 @@ public class intergerTest
     }
 }
 ```
+![](https://github.com/Tooktasupaporn/LAB-07/blob/master/lab7%E0%B8%84%E0%B8%B9%E0%B8%93..PNG?raw=true)
 3.	x*b
 ```
 using System;
@@ -710,7 +725,7 @@ public class intergerTest
     }
 }
 ```
-
+![](https://github.com/Tooktasupaporn/LAB-07/blob/master/lab7%20%E0%B8%AB%E0%B8%B2%E0%B8%A3.PNG?raw=true)
 4.	y/a
 ```
 using System;
@@ -729,6 +744,7 @@ public class intergerTest
     }
 }
 ```
+![](https://github.com/Tooktasupaporn/LAB-07/blob/master/lab7%20%25.PNG?raw=true)
 5.	b%y
 ```
 using System;
@@ -747,6 +763,7 @@ public class intergerTest
     }
 }
 ```
+![](https://github.com/Tooktasupaporn/LAB-07/blob/master/lab7%2010%25+y.PNG?raw=true)
 6.	y+10%x
 ```
 using System;
@@ -761,7 +778,7 @@ public class intergerTest
         Console.WriteLine("");
     }
 }
-
+![](https://github.com/Tooktasupaporn/LAB-07/blob/master/lab7%20a%E0%B8%AB%E0%B8%B2%E0%B8%A335.PNG?raw=true)
 ```
 7.	a/3*5
 ```
@@ -778,6 +795,7 @@ public class intergerTest
     }
 }
 ```
+![](https://github.com/Tooktasupaporn/LAB-07/blob/master/9%E0%B8%AB%E0%B8%B2%E0%B8%A32.PNG?raw=true)
 8.	9/2*a
 ```
 using System;
@@ -793,6 +811,7 @@ public class intergerTest
     }
 }
 ```
+![](https://github.com/Tooktasupaporn/LAB-07/blob/master/y%258.PNG?raw=true)
 9.	y%8
 ```
 using System;
@@ -808,6 +827,7 @@ public class intergerTest
     }
 }
 ```
+![](https://github.com/Tooktasupaporn/LAB-07/blob/master/+-%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%AA%E0%B8%B8%E0%B8%94%E0%B8%97%E0%B9%89%E0%B8%B2%E0%B8%A2.PNG?raw=true)
 10.	100*x+y%2-a
 ```
 using System;
@@ -823,6 +843,7 @@ public class intergerTest
     }
 }
 ```
+![](https://github.com/Tooktasupaporn/LAB-07/blob/master/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%AD%E0%B8%B2%E0%B8%97%E0%B8%B4%E0%B8%95%E0%B8%A2%E0%B9%8C.PNG?raw=true)
 ```
 ##2.2.3. ชนิดข้อมูลเลขทศนิยม (Floating Point and Decimal Types)
 ตัวเลขจำนวนทศนิยม มักจะใช้ในการคำนวณทางวิทยาศาสตร์ เนื่องจากค่าในวิทยาศาสตร์ต้องการความละเอียดสูง หรือมีค่าสูงมากกว่าที่เลขจำนวนเต็มจะเก็บได้
@@ -957,6 +978,8 @@ namespace variableProperties
 }
 ```
 
+![](https://github.com/Tooktasupaporn/LAB-07/blob/master/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%AD%E0%B8%B2%E0%B8%97%E0%B8%B4%E0%B8%95%E0%B8%A2%E0%B9%8C.PNG?raw=true)
+
 
 ##คลาส Math 
 ในภาษา C# มีคลาสที่เป็นตัวช่วยคำนวณทางคณิตศาสตร์ ที่ช่วยให้เราสามารถคำนวณฟังก์ชันพื้นฐานได้ อย่างรวดเร็ว ไม่ต้องพัฒนาโปรแกรมเพิ่มเติมด้วยเอง นั่นคือคลาส Math  ฟังก์ชันทางคณิตศาสตร์ที่ใช้บ่อยๆ สามารถดูรายละเอียดทั้งหมดได้จาก 
@@ -1032,6 +1055,7 @@ public class MathTest
     }
 }
 ```
+![](https://github.com/Tooktasupaporn/LAB-07/blob/master/x2.PNG?raw=true)
 2.	y = cos(x)
 ```
 using System;
@@ -1052,6 +1076,7 @@ public class MathTest
     }
 }
 ```
+![](https://github.com/Tooktasupaporn/LAB-07/blob/master/cos%20x.PNG?raw=true)
 3.	y = tan(x)
 ```
 using System;
@@ -1072,6 +1097,6 @@ public class MathTest
     }
 }
 ```
-
+![](https://github.com/Tooktasupaporn/LAB-07/blob/master/tan%20x.PNG?raw=true)
 ```
 	
